@@ -6,7 +6,7 @@ class Cat < ApplicationRecord
 
     validates :birth_date, :color, :name, :sex, presence: true
     validates :color, inclusion: {in: CAT_COLORS, message: "invalid color"}
-    validates :sex, inclusion: {in: %w(M F)}
+    validates :sex, inclusion: {in: %w(M F m f)}
     validate :birth_date_cannot_be_in_the_future
 
     def birth_date_cannot_be_in_the_future
