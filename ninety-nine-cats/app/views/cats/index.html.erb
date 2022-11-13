@@ -2,7 +2,9 @@
 <ul>
 <% @cats.each do |cat| %>
     <li><%= cat.name %></li>
-    <a href="<%=  cat_url(cat.id) %>">Show Cat</a>
+    <li type = "circle"><a href="<%=  cat_url(cat.id) %>">Show Cat</a></li>
 <% end %>
 </ul>
+<a href="<%= new_cat_url %>">Add a new cat</a>
+
 

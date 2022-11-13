@@ -8,28 +8,32 @@
     </thead>
     <tbody>
         <tr>
-            <td> name </td>
+            <td> Name </td>
             <td><%= @cat.name%></td>
         </tr>
 
         <tr>
-            <td> birth date </td>
+            <td> Birth Date </td>
             <td><%= @cat.birth_date%></td>
         </tr>
 
         <tr>
-            <td> sex </td>
+            <td> Sex </td>
             <td><%= @cat.sex%></td>
         </tr>
 
         <tr>
-            <td> color </td>
+            <td> Color </td>
             <td><%= @cat.color%></td>
         </tr>
 
         <tr>
-            <td> description </td>
+            <td> Description </td>
             <td><%= @cat.description%></td>
         </tr>
     </tbody>
 </table>
+<a href="<%= cats_url %>">View All Cats</a> <br><br>
+<a href="<%= edit_cat_url %>">Edit</a>
+
+
